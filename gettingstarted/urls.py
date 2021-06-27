@@ -20,6 +20,3 @@ urlpatterns = [
     path("admin/", admin.site.urls),
 ]
 
-from . import views
-
-path('', include('blog.urls')),
