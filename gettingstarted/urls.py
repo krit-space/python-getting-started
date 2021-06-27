@@ -19,3 +19,7 @@ urlpatterns = [
     path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
 ]
+
+from . import views
+
+path('', include('blog.urls')),
